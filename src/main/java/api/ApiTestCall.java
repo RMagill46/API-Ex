@@ -9,7 +9,7 @@ public class ApiTestCall {
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
         Request request = new Request.Builder()
-                .url("https://statsapi.web.nhl.com/api/v1/gameTypes")
+                .url("https://nba-stats-db.herokuapp.com/api/playerdata/name/lebron")
                 .method("GET", null)
                 .build();
         Response response = client.newCall(request).execute();
